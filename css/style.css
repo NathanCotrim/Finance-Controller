@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f2f5;
+}
+
+.container {
+  margin: auto;
+  width: min(90vw, 800px);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+a {
+  color: #49aa26;
+}
+
+a:hover {
+  color: #3dd73d;
+}
+
+.btn.new {
+  margin-bottom: .8rem;
+  display: inline-block;
+  margin-bottom: .8rem;
+}
+
+.btn.cancel {
+  color: #e92929;
+  border: 2px solid #e92929;
+  border-radius: 0.25rem;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.6;
+}
+
+.btn.cancel:hover {
+  opacity: 1;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  color: #fff;
+  background: #49aa26;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  border-radius: 0.2rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.08rem;
+}
+
+button:hover {
+  background: #3dd73d;
+}
+
+h2 {
+  margin-top: 3.2rem;
+  margin-bottom: 0.8rem;
+  color: #363f5f;
+  font-weight: normal;
+}
+
+header {
+  background-color: #2d4a22;
+  padding: 2rem 0 10rem;
+  text-align: center;
+}
+
+#balance {
+  margin-top: -7rem;
+}
+
+#balance h2 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.card h3 {
+  font-weight: normal;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card p {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+}
+
+.card.total {
+  background: #49AA26;
+  color: #fff;
+}
+
+#transaction {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+}
+
+#data-table {
+  border-spacing: 0 0.5rem;
+  width: 100%;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+  border-radius: 0 0.25rem .25rem 0;
+}
+
+table th {
+  background: #fff;
+  font-weight: normal;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+table th:last-child, table td:last-child {
+  text-align: center;
+}
+
+table td {
+  background: #fff;
+  color: #969cb3;
+  padding: 1rem 2rem;
+}
+
+table td img:hover {
+  cursor: pointer;
+}
+
+table tbody tr {
+  opacity: 0.8;
+}
+
+table tbody tr:hover {
+  opacity: 1;
+}
+
+table td.description {
+  color: #363f5f;
+}
+
+table td.income {
+  color: #12a454;
+}
+
+table td.expense {
+  color: #e92929;
+}
+
+footer {
+  color: #363f5f;
+  opacity: 0.9;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay .modal {
+  background: #f0f2f5;
+  padding: 2.4rem;
+  z-index: 1000;
+  position: relative;
+}
+
+.modal-overlay #form {
+  max-width: 500px;
+}
+
+.modal-overlay #form h2 {
+  margin-top: 0;
+}
+
+.modal-overlay #form form .input-group {
+  margin-top: 0.8rem;
+}
+
+.modal-overlay #form .input-group.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-overlay #form .input-group.actions .btn, .modal-overlay #form .input-group.actions button {
+  width: 48%;
+}
+
+.modal-overlay #form small {
+  opacity: 0.5;
+}
+
+.modal-overlay #form form input {
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 87.5%;
+  }
+  #balance {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
