@@ -1,0 +1,4 @@
+# ignorando pasta vscode
+.vscode/
+# ignorando .gitignore
+.gitignore/
