@@ -3,15 +3,9 @@
  <img src="https://img.freepik.com/free-photo/front-view-finance-business-elements-assortment_23-2148793759.jpg?size=626&ext=jpg" alt="Project logo"></a>
 </p>
 
-<h1 align="center">💰 Finance Controller 💰</h1>
-
-<div align="center">
-  
 <br>
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div> 
+<h1 align="center">💰 Finance Controller 💰</h1>
 
 ---
 
