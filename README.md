@@ -5,7 +5,7 @@
 
 <br>
 
-<h1 align="center">💰 Finance Controller 💰</h1>
+<h1 align="center">💰 Your Money 💰</h1>
 
 ---
 
